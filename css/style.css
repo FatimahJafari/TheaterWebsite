@@ -1,0 +1,151 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: aliceblue;
+    margin: 0;
+    padding: 0;
+}
+ul, a{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: inherit;
+    font-family:"Playwrite RO";
+}
+header{
+    position: fixed;
+    background-color: black;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgb(0,0,0.1);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+   
+}
+nav ul, .cartoon-grid{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    margin: 0 20px;
+}
+nav ul li a{
+    color: aliceblue;
+    font-size: 16px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+nav ul li a:hover, nav ul li a:focus{
+    background-color: rgb(19, 41, 243);
+}
+.featured, .cartoons, .cartoon-grid{
+    text-align: center;
+    padding: 20px;
+}
+.cartoon-item img{
+    max-width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+.featured img, .cartoon-details img, .cartoon-item img{
+    max-width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+footer{
+    background-color:black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.cartoon-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px,1fr));
+    gap: 20px;
+}
+.cartoon-item{
+    background-color: black;
+    border: 1px solid beige;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px black;
+    position: relative;
+    padding: 10px;
+    margin: 50px;
+}
+.cartoon-details{
+    max-width: 800px;
+    margin: 0 auto 100px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    height: 700px;
+
+}
+.cartoon-item h3, .cartoon-details h1{
+    color: rgb(231, 200, 218);
+    margin: 10px 0;
+    font-size: 1rem;
+}
+.cartoon-item:hover{
+    transform: scale(1.05);
+}
+.play-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color:rgb(240, 237, 243);
+    padding-left: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0;
+
+}
+.cartoon-item:hover .play-icon{
+    opacity: 2;
+}
+ .cartoon-details {
+    height: 200px;
+    width: 200px;
+    background-color:wheat;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+ }
+ .cartoon-details {
+    background-color:black
+ }
+ .pagmove{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 80px;
+    padding: 0;
+ }
+ .pagmove a{
+    color: aliceblue;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color 3s;
+    border: 1px solid wheat;
+    margin: 0 4px;
+    border-radius: 5px;
+ }
+h1,p{
+    text-align: center;
+    
+}
